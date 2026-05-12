@@ -11,3 +11,8 @@ double Square::side() {
     double diagonale = A.distance(C);
     return diagonale / std::sqrt(2.0);
 }
+// Périmètre : 4 * côté
+double Square::perimeter() {
+    return 4.0 * side();
+}
+
