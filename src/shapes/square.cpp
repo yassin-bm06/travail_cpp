@@ -20,4 +20,7 @@ double Square::area() {
     double s = side();
     return s * s;
 }
-
+// Le centre du carré est le milieu du segment [AC]
+Point Square::center() {
+    return Point((A.x + C.x) / 2.0, (A.y + C.y) / 2.0);
+}
