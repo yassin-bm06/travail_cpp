@@ -4,7 +4,7 @@
 Circle::Circle(double r, Point c) : radius(r), center(c) {};
 
 
-double Circle:circumference() {  #Calculate the circumference of a circle
+double Circle:circumference() {  #calculer la circonférence du cercle 
 	return 2*M_PI*radius;
 	
 }
