@@ -15,4 +15,9 @@ double Square::side() {
 double Square::perimeter() {
     return 4.0 * side();
 }
+// Aire : côté * côté
+double Square::area() {
+    double s = side();
+    return s * s;
+}
 
