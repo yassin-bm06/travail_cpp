@@ -1,6 +1,6 @@
 #include "point.hpp"
 #include "shapes/circle.hpp"
-
+#include <cmath>
 Circle::Circle(double r, Point c) : radius(r), center(c) {};
 
 
