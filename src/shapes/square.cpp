@@ -73,3 +73,12 @@ bool Square::equals(Square square) {
     bool match2 = (A.x == square.C.x && A.y == square.C.y && C.x == square.A.x && C.y == square.A.y);
     return match1 || match2;
 }
+// Cercle inscrit
+Circle Square::inscribedCircle() {
+    return Circle(side() / 2.0, center());
+}
+
+// Cercle circonscrit
+Circle Square::circumscribedCircle() {
+    return Circle(A.distance(C) / 2.0, center());
+}
