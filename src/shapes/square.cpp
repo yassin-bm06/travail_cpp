@@ -66,3 +66,10 @@ void Square::resize(double ratio) {
     C.x = M.x + (C.x - M.x) * ratio;
     C.y = M.y + (C.y - M.y) * ratio;
 }
+// Vérifie si deux carrés sont égaux
+bool Square::equals(Square square) {
+    // Ils sont égaux si leurs coins opposés sont au même endroit
+    bool match1 = (A.x == square.A.x && A.y == square.A.y && C.x == square.C.x && C.y == square.C.y);
+    bool match2 = (A.x == square.C.x && A.y == square.C.y && C.x == square.A.x && C.y == square.A.y);
+    return match1 || match2;
+}
