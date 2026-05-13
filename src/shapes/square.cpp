@@ -57,3 +57,12 @@ void Square::translate(Point T) {
     C.x += T.x;
     C.y += T.y;
 }
+// Redimensionne le carré en gardant le centre fixe
+void Square::resize(double ratio) {
+    Point M = center();
+    // On éloigne ou on rapproche A et C du centre M selon le ratio
+    A.x = M.x + (A.x - M.x) * ratio;
+    A.y = M.y + (A.y - M.y) * ratio;
+    C.x = M.x + (C.x - M.x) * ratio;
+    C.y = M.y + (C.y - M.y) * ratio;
+}
