@@ -1,6 +1,6 @@
 #include "shapes/triangle.hpp"
 #include "draw.hpp"
-
+#include <iostream>
 #include <cmath>
 #include <vector>
 
@@ -157,7 +157,7 @@ Circle Triangle::inscribedCircle() {
 
     double r = area() / (perimeter() / 2.0);
 
-    return Circle(I, r);
+    return Circle(r, I);
 }
 
 // Calcule le cercle passant par A, B et C
@@ -186,5 +186,5 @@ Circle Triangle::circumscribedCircle() {
     // Rayon = distance centre -> sommet
     double r = O.distance(A);
 
-    return Circle(O, r);
+    return Circle(r, O);
 }
