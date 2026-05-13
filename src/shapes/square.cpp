@@ -50,3 +50,10 @@ void Square::draw() {
 
     draw_picture(points_du_carre);
 }
+// Déplace le carré : on décale les points A et C
+void Square::translate(Point T) {
+    A.x += T.x;
+    A.y += T.y;
+    C.x += T.x;
+    C.y += T.y;
+}
