@@ -61,7 +61,7 @@ void Circle::translate(Point T){
 /*
 @La methode Circle.resize
 @param ratio de type double, un réel (Positif)
-@(void: pas de return), modifie le rayon du cercle en le multipliant par le ratio (ratio > 1: angrandit le cercle/ ratio < 0: cercle plus petit)  
+@(void: pas de return), modifie le rayon du cercle en le multipliant par le ratio (ratio > 1: angrandit le cercle/ ratio < 1: cercle plus petit)  
 */
 void Circle::resize(double ratio){
 	if(ratio<=0){
